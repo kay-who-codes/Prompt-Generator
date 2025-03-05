@@ -1,0 +1,56 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    transition: opacity 0.5s ease-in-out;
+}
+
+select, button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+select {
+    background: #333;
+    color: white;
+}
+
+button {
+    background: #6200ea;
+    color: white;
+}
+
+button:hover {
+    background: #3700b3;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+    font-size: 1.8em;
+    margin-top: 20px;
+}
