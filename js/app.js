@@ -42,7 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
             title.style.display = "none"; // Hide H1
             fileSelector.style.display = "none"; // Hide Select
             generateBtn.textContent = "Another One";
+
+            // Apply fade-out effect before updating text
+            output.classList.remove("show");
+            setTimeout(() => {
             output.textContent = outputs[Math.floor(Math.random() * outputs.length)];
+            output.classList.add("show"); }, 200);
+
             homeBtn.classList.remove("hidden");
         }
     });

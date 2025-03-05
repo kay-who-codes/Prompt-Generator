@@ -50,6 +50,7 @@ button:hover {
 
 button:active {
     transform: scale(0.95);
+    background-color: #ff480069;
 }
 
 #homeBtn {
@@ -61,6 +62,7 @@ button:active {
 
 #homeBtn:hover {
     background: #ffffff1a;
+    box-shadow: none;
 }
 
 .hidden {
@@ -70,4 +72,17 @@ button:active {
 p {
     font-size: 1.8em;
     margin-top: 20px;
+}
+
+#output {
+    font-size: 1.8em;
+    margin-top: 20px;
+    opacity: 0;
+    filter: blur(10px);
+    transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+#output.show {
+    opacity: 1;
+    filter: blur(0);
 }
