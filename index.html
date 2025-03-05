@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prompt Generator</title>
+    <title>❗ Prompt Generator</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
+    <div id="header"></div>
     <div class="container">
-        <h1 id="title">❗ Prompt Generator</h1>
-        <select id="fileSelector">
-            <option value="Outputs/Outputs1.js">Category 1</option>
-            <option value="Outputs/Outputs2.js">Category 2</option>
-        </select>
-        <button id="generateBtn">Generate</button>
+        <h1 id="title">Prompt Generator</h1>
         <p id="output"></p>
+        <select id="fileSelector">
+            <option value="Outputs/Quotes.js">Quotes</option>
+            <option value="Outputs/Example Prompts.js">Example Prompts</option>
+        </select>
+        <button id="generateBtn">Generate</button><br>
         <button id="homeBtn" class="hidden">Home</button>
     </div>
     <audio id="clickSound" src="sounds/click.mp3"></audio>
     <script src="js/app.js"></script>
+    <script src="js/header.js"></script>
 </body>
 </html>

@@ -11,15 +11,17 @@ body {
 
 .container {
     text-align: center;
+    width: 65%;
 }
 
 h1 {
     font-size: 2.5em;
     transition: opacity 0.5s ease-in-out;
+    margin-bottom: 50px;
 }
 
 select, button {
-    margin-top: 15px;
+    margin-top: 15px;   
     padding: 10px 20px;
     font-size: 1.2em;
     border: none;
@@ -31,19 +33,34 @@ select, button {
 select {
     background: #333;
     color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: block; /* Ensures proper centering */
+    margin: 15px auto; /* Centers it horizontally */
 }
 
 button {
-    background: #6200ea;
+    background: #ff4800;
     color: white;
 }
 
 button:hover {
-    background: #3700b3;
+    box-shadow: #ff480069 0px 0px 10px; 
 }
 
 button:active {
     transform: scale(0.95);
+}
+
+#homeBtn {
+    background: #00000000;
+    outline: white solid 1px;
+    position: relative;
+    top: 200px;
+}
+
+#homeBtn:hover {
+    background: #ffffff1a;
 }
 
 .hidden {

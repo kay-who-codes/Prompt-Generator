@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (outputs.length > 0) {
             title.style.display = "none"; // Hide H1
+            fileSelector.style.display = "none"; // Hide Select
             generateBtn.textContent = "Another One";
             output.textContent = outputs[Math.floor(Math.random() * outputs.length)];
             homeBtn.classList.remove("hidden");
@@ -49,8 +50,13 @@ document.addEventListener("DOMContentLoaded", () => {
     homeBtn.addEventListener("click", () => {
         clickSound.play();
         title.style.display = "block"; // Show H1 again
+        fileSelector.style.display = "block"; // Show Select
         generateBtn.textContent = "Generate";
         output.textContent = "";
+        outputs = []; // Reset stored outputs
         homeBtn.classList.add("hidden");
     });
+    
 });
+
+
